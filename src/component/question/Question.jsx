@@ -1,10 +1,27 @@
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faEye } from '@fortawesome/free-solid-svg-icons'
 import Option from "../Option";
+import { Button } from "react-bootstrap";
+import { toast } from "react-toastify";
 
 
 const Question = ({ questionData }) => {
     // const { questionData } = props;
     const { question, options, id, correctAnswer } = questionData;
     // console.log(correctAnswer)
+    const showCorrectAnswer = () => {
+        toast.info(`Correct Answer is : ${correctAnswer}`, {
+            position: "top-center",
+            autoClose: 2000,
+            hideProgressBar: false,
+            closeOnClick: true,
+            pauseOnHover: true,
+            draggable: true,
+            progress: undefined,
+            theme: "light",
+        });
+    }
+
 
     return (
         <div className='col-sm-12 col-md-6 border rounded p-3 mt-5 bg-light'>
@@ -24,6 +41,9 @@ const Question = ({ questionData }) => {
                             </Option>
                         })
                     }
+                </div>
+                <div className="text-center">
+                    <Button onClick={showCorrectAnswer} variant="primary"><FontAwesomeIcon icon={faEye}></FontAwesomeIcon></Button>
                 </div>
             </div>
 

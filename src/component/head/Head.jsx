@@ -1,5 +1,4 @@
 import React from 'react';
-import './head.css';
 import './quiz-bg-01.jpg'
 
 const Head = () => {

@@ -6,7 +6,7 @@ const Topics = () => {
     const quizItems = useContext(QuizTopicContext);
     const { data } = quizItems;
     return (
-        <div className='container'>
+        <div className='container vh-100'>
             <div className='my-5 row'>
                 {
                     data.map(item => <TopicItem

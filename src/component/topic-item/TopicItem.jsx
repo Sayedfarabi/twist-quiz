@@ -18,7 +18,7 @@ const TopicItem = ({ item }) => {
         });
     }
     return (
-        <div style={{ maxWidth: '500px' }} className='d-flex justify-content-center col-sm-12 col-md-6 p-2 m-2 bg-light'>
+        <div style={{ maxWidth: '400px', backgroundColor: '#bbc6f2' }} className='d-flex justify-content-center col-sm-12 col-md-6 p-2 m-3 rounded'>
             <div>
                 <div>
                     <img className='img-fluid' src={item.logo} alt="" />

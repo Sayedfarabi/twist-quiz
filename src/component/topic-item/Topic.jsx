@@ -9,7 +9,7 @@ const Topics = () => {
     return (
         <div className='container'>
             <h2 className='text-center text-primary mt-3'>Choice Your Topic for Quiz</h2>
-            <div className='my-5 row'>
+            <div style={{ margin: 'auto', maxWidth: '900px' }} className='my-5 row'>
                 {
                     data.map(item => <TopicItem
                         key={item.id}

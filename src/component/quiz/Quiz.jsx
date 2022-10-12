@@ -9,8 +9,8 @@ const Quiz = () => {
     const quizData = useLoaderData();
     // console.log(quizData);
     const { data } = quizData;
-    const { questions } = data;
-    // console.log(questions)
+    const { questions, name } = data;
+    // console.log(name)
     addToDb(questions);
 
     const storeData = useContext(StoreDataContext);
@@ -18,7 +18,10 @@ const Quiz = () => {
 
     return (
         <div className='container'>
-            <div className='row gx-2'>
+            <div className='my-5 text-center'>
+                <h1 className='fw-bolder text-primary'>Quiz Topic : {name}</h1>
+            </div>
+            <div style={{ margin: '5px auto' }}>
                 {storeData.map(questions => {
                     return <Question
                         key={questions.id}

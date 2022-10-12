@@ -25,12 +25,12 @@ const Question = ({ questionData }) => {
 
 
     return (
-        <div className='col-sm-12 col-md-6 border rounded p-3 mt-5 bg-light'>
-            <div>
-                <div className="text-primary">
-                    <h3><span className="me-2"></span>{question}</h3>
+        <div className="rounded" style={{ maxWidth: '350px', margin: '20px auto', background: '#2c2c2e' }}>
+            <div className="p-3">
+                <div className="text-primary px-2 text-light rounded" style={{ backgroundColor: '#8093e0' }}>
+                    <h3>{question}</h3>
                 </div>
-                <div className="row">
+                <div className="row m-2 rounded" style={{ backgroundColor: '#bbc6f2' }}>
                     {
                         options.map(option => {
                             return <Option
@@ -42,7 +42,7 @@ const Question = ({ questionData }) => {
                         })
                     }
                 </div>
-                <div className="text-center">
+                <div className="text-center mt-3">
                     <Button onClick={showCorrectAnswer} variant="primary"><FontAwesomeIcon icon={faEye}></FontAwesomeIcon></Button>
                 </div>
             </div>

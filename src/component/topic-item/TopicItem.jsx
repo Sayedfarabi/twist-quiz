@@ -23,8 +23,9 @@ const TopicItem = ({ item }) => {
                 <div>
                     <img className='img-fluid' src={item.logo} alt="" />
                 </div>
-                <div className='mt-2 d-flex align-items-center justify-content-between'>
+                <div className='mt-2 d-flex align-items-center justify-content-between' style={{ color: '#e630e2' }}>
                     <div><h5>{item.name}</h5></div>
+                    <div><h5>Quiz : {item.total}</h5></div>
                     <div>
                         <Link to={`/quiz/${item.id}`}><Button onClick={startButtonHandler} variant="primary">Start Practice</Button></Link>
                     </div>

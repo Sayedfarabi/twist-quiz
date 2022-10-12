@@ -5,7 +5,7 @@ import Topics from '../topic-item/Topic';
 
 const Home = () => {
     return (
-        <div className='container' style={{ height: '90vh' }}>
+        <div className='container'>
             <Head></Head>
             <Topics></Topics>
         </div>

@@ -1,0 +1,11 @@
+.head-section {
+    width: 100%;
+    min-height: 400px;
+    border: 1px solid orange;
+    background-image: url('./quiz-bg-01.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-y: center;
+    background-position-x: center;
+
+}

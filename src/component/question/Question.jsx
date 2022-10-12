@@ -7,7 +7,9 @@ import { toast } from "react-toastify";
 
 const Question = ({ questionData }) => {
     const { question, options, id, correctAnswer } = questionData;
-    // console.log(questionData);
+    // const [opt1, opt2, opt3, opt4] = options;
+    // console.log(opt1);
+
     const showCorrectAnswer = () => {
         toast.info(`Correct Answer is : ${correctAnswer}`, {
             position: "top-center",

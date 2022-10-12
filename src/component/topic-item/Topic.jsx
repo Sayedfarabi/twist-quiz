@@ -7,7 +7,8 @@ const Topics = () => {
     const { data } = quizItems;
     // console.log(data)
     return (
-        <div className='container vh-100'>
+        <div className='container'>
+            <h2 className='text-center text-primary mt-3'>Choice Your Topic for Quiz</h2>
             <div className='my-5 row'>
                 {
                     data.map(item => <TopicItem

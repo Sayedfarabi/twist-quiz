@@ -20,6 +20,7 @@ const Quiz = () => {
         <div className='container'>
             <div className='my-5 text-center'>
                 <h1 className='fw-bolder text-primary'>Quiz Topic : {name}</h1>
+                <h4 className='text-info'>Select correct radio input</h4>
             </div>
             <div style={{ margin: '5px auto' }}>
                 {storeData.map(questions => {

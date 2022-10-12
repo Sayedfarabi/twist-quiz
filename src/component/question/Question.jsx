@@ -6,9 +6,8 @@ import { toast } from "react-toastify";
 
 
 const Question = ({ questionData }) => {
-    // const { questionData } = props;
     const { question, options, id, correctAnswer } = questionData;
-    // console.log(correctAnswer)
+    // console.log(questionData);
     const showCorrectAnswer = () => {
         toast.info(`Correct Answer is : ${correctAnswer}`, {
             position: "top-center",
@@ -37,7 +36,6 @@ const Question = ({ questionData }) => {
                                 id={id}
                                 correctAnswer={correctAnswer}
                             >
-
                             </Option>
                         })
                     }
@@ -46,9 +44,6 @@ const Question = ({ questionData }) => {
                     <Button onClick={showCorrectAnswer} variant="primary"><FontAwesomeIcon icon={faEye}></FontAwesomeIcon></Button>
                 </div>
             </div>
-
-
-
         </div>
     );
 };

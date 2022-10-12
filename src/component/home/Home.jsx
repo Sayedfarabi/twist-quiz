@@ -1,6 +1,7 @@
 import React from 'react';
 import Head from '../head/Head';
-import Topics from '../head/topic/Topic';
+import Topics from '../topic-item/Topic';
+
 
 const Home = () => {
     return (

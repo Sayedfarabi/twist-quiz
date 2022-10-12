@@ -1,13 +1,12 @@
 import { createBrowserRouter } from "react-router-dom";
 import Blog from "../component/blog/Blog";
-import Topics from "../component/head/topic/Topic";
 import Home from "../component/home/Home";
 import Quiz from "../component/quiz/Quiz";
-// import { getTopicsData } from "../component/loaders/loaders";
 import Root from "../component/Root";
 import Statistics from "../component/statistics/Statistics";
 import ErrorPage from "../component/errorPage/ErrorPage";
 import { storeDataAndTopicData } from "./getStoreData&TopicData";
+import Topics from "../component/topic-item/Topic";
 
 const router = createBrowserRouter([
     {
